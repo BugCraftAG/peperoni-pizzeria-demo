@@ -1,0 +1,5 @@
+# Netlify baut nur die Website (ohne Server). Konten/Login brauchen den Docker-Server.
+[build]
+  base = "web"
+  command = "npm ci && npm run site"
+  publish = "public"
