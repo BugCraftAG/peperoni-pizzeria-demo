@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Abholung: 2 Pizza Peperoni mit Mais + Getränk mit Pfand",
+    "mode": "pickup",
+    "lines": [
+      { "itemId": "pizza-peperoni", "qty": 2, "toppings": ["Mais"] },
+      { "itemId": "softdrink", "qty": 1 }
+    ],
+    "expect": { "subtotal": 3230, "deposit": 25, "fee": 0, "total": 3255, "missing": 0 }
+  },
+  {
+    "name": "Lieferung Bad Radkersburg unter Mindestbestellwert",
+    "mode": "delivery",
+    "zone": "bad-radkersburg",
+    "lines": [
+      { "itemId": "doener-kebap", "qty": 1 },
+      { "itemId": "pommes", "qty": 1, "variant": "gross" }
+    ],
+    "expect": { "subtotal": 1100, "deposit": 0, "fee": 200, "total": 1300, "missing": 400 }
+  },
+  {
+    "name": "Lieferung Halbenrain: Wunschpizza mit 6 Zutaten, Burger 180 g mit Extras, Nudeln, Lasagne überbacken",
+    "mode": "delivery",
+    "zone": "zone2",
+    "lines": [
+      { "itemId": "wunschpizza", "qty": 1, "toppings": ["Schinken", "Salami", "Mais", "Zwiebel", "Champignons", "Extra Käse"] },
+      { "itemId": "peperoni-burger", "qty": 1, "variant": "180", "extras": ["speck", "cheddar"] },
+      { "itemId": "nudeln", "qty": 1, "noodle": "Penne", "sauce": "carbonara" },
+      { "itemId": "lasagne", "qty": 1, "cheese": true }
+    ],
+    "expect": { "subtotal": 5730, "deposit": 0, "fee": 300, "total": 6030, "missing": 0 }
+  },
+  {
+    "name": "Abholung: Energydrinks und Bier mit Pfand",
+    "mode": "pickup",
+    "lines": [
+      { "itemId": "energy", "qty": 3, "variant": "redbull" },
+      { "itemId": "bier", "qty": 1 }
+    ],
+    "expect": { "subtotal": 1600, "deposit": 100, "fee": 0, "total": 1700, "missing": 0 }
+  },
+  { "name": "Fehler: Wunschpizza mit nur 4 Zutaten", "mode": "pickup", "lines": [{ "itemId": "wunschpizza", "qty": 1, "toppings": ["Schinken", "Salami", "Mais", "Zwiebel"] }], "error": true },
+  { "name": "Fehler: Burger ohne Größe", "mode": "pickup", "lines": [{ "itemId": "hamburger", "qty": 1 }], "error": true },
+  { "name": "Fehler: unbekannte Zutat", "mode": "pickup", "lines": [{ "itemId": "margherita", "qty": 1, "toppings": ["Gold"] }], "error": true },
+  { "name": "Fehler: doppelte Zutat", "mode": "pickup", "lines": [{ "itemId": "margherita", "qty": 1, "toppings": ["Mais", "Mais"] }], "error": true },
+  { "name": "Fehler: Menge 0", "mode": "pickup", "lines": [{ "itemId": "margherita", "qty": 0 }], "error": true },
+  { "name": "Fehler: Lieferung ohne Gebiet", "mode": "delivery", "lines": [{ "itemId": "margherita", "qty": 1 }], "error": true },
+  { "name": "Fehler: Nudeln ohne Sauce", "mode": "pickup", "lines": [{ "itemId": "nudeln", "qty": 1, "noodle": "Penne" }], "error": true },
+  { "name": "Fehler: Extras auf Kebap", "mode": "pickup", "lines": [{ "itemId": "doener-kebap", "qty": 1, "extras": ["speck"] }], "error": true }
+]

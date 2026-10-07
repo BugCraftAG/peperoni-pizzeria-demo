@@ -1,0 +1,1273 @@
+{
+ "restaurant": {
+  "name": "Peperoni",
+  "full": "Peperoni – Pizzeria · Kebap · Burger",
+  "phone": "03476 40786",
+  "phoneIntl": "+43347640786",
+  "street": "Langgasse 31",
+  "city": "8490 Bad Radkersburg",
+  "mapsQuery": "Peperoni Pizzeria Kebap Langgasse 31 8490 Bad Radkersburg"
+ },
+ "hours": {
+  "0": [
+   [
+    660,
+    1260
+   ]
+  ],
+  "1": [
+   [
+    660,
+    840
+   ],
+   [
+    960,
+    1260
+   ]
+  ],
+  "2": [],
+  "3": [
+   [
+    660,
+    840
+   ],
+   [
+    960,
+    1260
+   ]
+  ],
+  "4": [
+   [
+    660,
+    840
+   ],
+   [
+    960,
+    1260
+   ]
+  ],
+  "5": [
+   [
+    660,
+    840
+   ],
+   [
+    960,
+    1260
+   ]
+  ],
+  "6": [
+   [
+    660,
+    1260
+   ]
+  ]
+ },
+ "zones": [
+  {
+   "id": "bad-radkersburg",
+   "name": "Bad Radkersburg",
+   "places": [
+    "Bad Radkersburg"
+   ],
+   "minOrder": 1500,
+   "fee": 200
+  },
+  {
+   "id": "zone2",
+   "name": "Halbenrain, Goritz, Zelting, Sicheldorf",
+   "places": [
+    "Halbenrain",
+    "Goritz",
+    "Zelting",
+    "Sicheldorf"
+   ],
+   "minOrder": 2000,
+   "fee": 300
+  },
+  {
+   "id": "zone3",
+   "name": "Unterpurkla, Oberpurkla, Pölten, Klöch",
+   "places": [
+    "Unterpurkla",
+    "Oberpurkla",
+    "Pölten",
+    "Klöch"
+   ],
+   "minOrder": 3000,
+   "fee": 500
+  },
+  {
+   "id": "zone4",
+   "name": "Tieschen, Weixelbaum",
+   "places": [
+    "Tieschen",
+    "Weixelbaum"
+   ],
+   "minOrder": 3500,
+   "fee": 500
+  }
+ ],
+ "pizzaToppings": {
+  "price": 200,
+  "items": [
+   "Schinken",
+   "Salami",
+   "Speck",
+   "Kebapfleisch",
+   "Thunfisch",
+   "Sardellen",
+   "Meeresfrüchte",
+   "Mais",
+   "Champignons",
+   "Paprika",
+   "Tomatenscheiben",
+   "Zwiebel",
+   "Knoblauch",
+   "Spinat",
+   "Artischocken",
+   "Oliven",
+   "Ananas",
+   "milde Peperoni",
+   "scharfe Pfefferoni",
+   "Ei",
+   "Spiegelei",
+   "Schafkäse",
+   "Extra Käse"
+  ]
+ },
+ "burgerExtras": [
+  {
+   "id": "pommes",
+   "name": "Pommes klein",
+   "price": 350,
+   "allergens": []
+  },
+  {
+   "id": "speck",
+   "name": "Speck",
+   "price": 200,
+   "allergens": []
+  },
+  {
+   "id": "spiegelei",
+   "name": "Spiegelei",
+   "price": 150,
+   "allergens": [
+    "C"
+   ]
+  },
+  {
+   "id": "fleisch100",
+   "name": "Fleisch 100 g",
+   "price": 300,
+   "allergens": [
+    "M"
+   ]
+  },
+  {
+   "id": "fleisch180",
+   "name": "Fleisch 180 g",
+   "price": 450,
+   "allergens": [
+    "M"
+   ]
+  },
+  {
+   "id": "cheddar",
+   "name": "Cheddarkäse",
+   "price": 100,
+   "allergens": [
+    "G"
+   ]
+  }
+ ],
+ "pasta": {
+  "noodles": [
+   "Spaghetti",
+   "Penne",
+   "Bandnudeln",
+   "Nudel-Mix (3 Sorten)",
+   "Tortellini"
+  ],
+  "sauces": [
+   {
+    "id": "carbonara",
+    "name": "Carbonara",
+    "desc": "Schinken, Knoblauch, Rahmsauce",
+    "allergens": [
+     "A",
+     "C",
+     "F",
+     "G",
+     "L"
+    ]
+   },
+   {
+    "id": "tomate",
+    "name": "Tomatensauce",
+    "desc": "Tomatenscheiben, Tomatensauce, Gewürze",
+    "allergens": [
+     "A",
+     "C",
+     "F",
+     "G",
+     "L"
+    ],
+    "veg": true
+   },
+   {
+    "id": "arrabiata",
+    "name": "Arrabiata",
+    "desc": "Thunfisch, Zwiebel, scharfe Pfefferoni, Tomatensauce",
+    "allergens": [
+     "A",
+     "C",
+     "F",
+     "G",
+     "L",
+     "D"
+    ],
+    "spicy": true
+   },
+   {
+    "id": "gorgonzola",
+    "name": "Gorgonzola",
+    "desc": "Gorgonzola, Rahmsauce",
+    "allergens": [
+     "A",
+     "C",
+     "F",
+     "G",
+     "L"
+    ],
+    "veg": true
+   },
+   {
+    "id": "knoblauch",
+    "name": "Knoblauch-Rahmsauce",
+    "desc": "frischer Knoblauch, Rahmsauce",
+    "allergens": [
+     "A",
+     "C",
+     "F",
+     "G",
+     "L"
+    ],
+    "veg": true
+   },
+   {
+    "id": "meeresfruechte",
+    "name": "Meeresfrüchte",
+    "desc": "Meeresfrüchte mit Tomatensauce",
+    "allergens": [
+     "A",
+     "C",
+     "F",
+     "G",
+     "L",
+     "H",
+     "R"
+    ]
+   }
+  ]
+ },
+ "lasagneCheese": 400,
+ "categories": [
+  {
+   "id": "pizza",
+   "name": "Pizza",
+   "note": "Jede Pizza ca. 33 cm · Extra-Zutat je € 2,00",
+   "items": [
+    {
+     "id": "margherita",
+     "name": "Margherita",
+     "desc": "Tomatensauce, Käse, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 950,
+     "options": "pizza",
+     "veg": true
+    },
+    {
+     "id": "al-salami",
+     "name": "Al Salami",
+     "desc": "Tomatensauce, Käse, Salami, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1080,
+     "options": "pizza"
+    },
+    {
+     "id": "prosciutto",
+     "name": "Prosciutto",
+     "desc": "Tomatensauce, Käse, Schinken, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1030,
+     "options": "pizza"
+    },
+    {
+     "id": "inferno",
+     "name": "Inferno",
+     "desc": "Tomatensauce, Käse, Schinken, Mais, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1080,
+     "options": "pizza"
+    },
+    {
+     "id": "napoli",
+     "name": "Napoli",
+     "desc": "Tomatensauce, Käse, Salami, Champignons, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1140,
+     "options": "pizza"
+    },
+    {
+     "id": "toscana",
+     "name": "Toscana",
+     "desc": "Tomatensauce, Käse, Schinken, Salami, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1080,
+     "options": "pizza"
+    },
+    {
+     "id": "hawaii",
+     "name": "Hawaii",
+     "desc": "Tomatensauce, Käse, Schinken, Ananas, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L",
+      "O"
+     ],
+     "price": 1130,
+     "options": "pizza"
+    },
+    {
+     "id": "casa-verona",
+     "name": "Casa Verona",
+     "desc": "Tomatensauce, Käse, Mais, Champignons, Paprika, Tomatenscheiben, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1080,
+     "options": "pizza",
+     "veg": true
+    },
+    {
+     "id": "al-tonno",
+     "name": "Al Tonno",
+     "desc": "Tomatensauce, Käse, Thunfisch, Zwiebel, Oregano",
+     "allergens": [
+      "A",
+      "D",
+      "G",
+      "L"
+     ],
+     "price": 1190,
+     "options": "pizza"
+    },
+    {
+     "id": "papagallo",
+     "name": "Papagallo",
+     "desc": "Tomatensauce, Käse, Speck, Mais, Spiegelei, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1150,
+     "options": "pizza"
+    },
+    {
+     "id": "fantastica",
+     "name": "Fantastica",
+     "desc": "Tomatensauce, Käse, Schinken, Salami, Champignons, Pfefferoni, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1160,
+     "options": "pizza",
+     "spicy": true
+    },
+    {
+     "id": "cardinale",
+     "name": "Cardinale",
+     "desc": "Tomatensauce, Käse, Salami, Speck, Zwiebel, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1160,
+     "options": "pizza"
+    },
+    {
+     "id": "quattro-formaggi",
+     "name": "Quattro Formaggi",
+     "desc": "Tomatensauce, 4 Käsesorten, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1190,
+     "options": "pizza",
+     "veg": true
+    },
+    {
+     "id": "capricciosa",
+     "name": "Capricciosa",
+     "desc": "Tomatensauce, Käse, Schinken, Champignons, Artischocken, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1180,
+     "options": "pizza"
+    },
+    {
+     "id": "diavolo",
+     "name": "Diavolo",
+     "desc": "Tomatensauce, Käse, Salami, Zwiebel, scharfe Pfefferoni, Knoblauch, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1200,
+     "options": "pizza",
+     "spicy": true
+    },
+    {
+     "id": "bauern-pizza",
+     "name": "Bauern Pizza",
+     "desc": "Tomatensauce, Käse, Schinken, Speck, Mais, Pfefferoni, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1190,
+     "options": "pizza",
+     "spicy": true
+    },
+    {
+     "id": "salerno",
+     "name": "Salerno",
+     "desc": "Tomatensauce, Käse, Spinat, Knoblauch, Ei, Oregano",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "L"
+     ],
+     "price": 1140,
+     "options": "pizza",
+     "veg": true
+    },
+    {
+     "id": "flambierte-pizza",
+     "name": "Flambierte Pizza",
+     "desc": "Tomatensauce, Käse, Schinken, Salami, Speck, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1140,
+     "options": "pizza"
+    },
+    {
+     "id": "quattro",
+     "name": "Quattro",
+     "desc": "Tomatensauce, Käse, Schinken, Champignons, Artischocken, Thunfisch, Knoblauch, Oregano",
+     "allergens": [
+      "A",
+      "D",
+      "G",
+      "L"
+     ],
+     "price": 1340,
+     "options": "pizza"
+    },
+    {
+     "id": "frutti-di-mare",
+     "name": "Frutti di Mare",
+     "desc": "Tomatensauce, Käse, Meeresfrüchte, Thunfisch, Sardellen, Knoblauch, Oregano",
+     "allergens": [
+      "A",
+      "D",
+      "G",
+      "L",
+      "R"
+     ],
+     "price": 1340,
+     "options": "pizza"
+    },
+    {
+     "id": "calzone",
+     "name": "Calzone",
+     "desc": "Gefüllt (Tasche): Tomatensauce, Käse, Schinken, Champignons",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1260,
+     "options": "pizza"
+    },
+    {
+     "id": "calzone-peperoni",
+     "name": "Calzone Peperoni",
+     "desc": "Gefüllt (Tasche): Tomatensauce, Käse, Kebapfleisch, Zwiebel, scharfe Pfefferoni",
+     "allergens": [
+      "A",
+      "F",
+      "G",
+      "L",
+      "H",
+      "M"
+     ],
+     "price": 1260,
+     "options": "pizza",
+     "spicy": true
+    },
+    {
+     "id": "di-mafioso",
+     "name": "Di Mafioso",
+     "desc": "Tomatensauce, Käse, Schinken, Salami, Zwiebel, scharfe Pfefferoni, Knoblauch, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1200,
+     "options": "pizza",
+     "spicy": true
+    },
+    {
+     "id": "rustica",
+     "name": "Rustica",
+     "desc": "Tomatensauce, Käse, Schinken, Champignons, Oliven, Ei, Oregano",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "L"
+     ],
+     "price": 1240,
+     "options": "pizza"
+    },
+    {
+     "id": "al-capone",
+     "name": "Al Capone",
+     "desc": "Tomatensauce, Käse, Schinken, Speck, Mais, Zwiebel, Knoblauch, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1190,
+     "options": "pizza"
+    },
+    {
+     "id": "kebap-pizza",
+     "name": "Kebap Pizza",
+     "desc": "Tomatensauce, Käse, Kebapfleisch, Zwiebel, Oregano",
+     "allergens": [
+      "A",
+      "F",
+      "G",
+      "L",
+      "H",
+      "M"
+     ],
+     "price": 1190,
+     "options": "pizza",
+     "popular": true
+    },
+    {
+     "id": "pizza-peperoni",
+     "name": "Pizza Peperoni",
+     "desc": "Tomatensauce, Käse, Schinken, Salami, Speck, milde Peperoni, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1240,
+     "options": "pizza",
+     "popular": true
+    },
+    {
+     "id": "pizza-bad-radkersburg",
+     "name": "Pizza Bad Radkersburg",
+     "desc": "Tomatensauce, Käse, Schinken, Speck, Salami, Ei, Oregano",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "L"
+     ],
+     "price": 1310,
+     "options": "pizza",
+     "popular": true
+    },
+    {
+     "id": "pizza-fungi",
+     "name": "Pizza Fungi",
+     "desc": "Tomatensauce, Käse, Champignons, Oregano",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1080,
+     "options": "pizza",
+     "veg": true
+    },
+    {
+     "id": "wunschpizza",
+     "name": "Wunschpizza",
+     "desc": "Tomatensauce, Käse, Oregano und 5 Zutaten nach Wahl",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "price": 1350,
+     "options": "wunsch",
+     "veg": true
+    }
+   ]
+  },
+  {
+   "id": "stangerl",
+   "name": "Pizzastangerl",
+   "note": "Gefüllt, jedes Stangerl mit Knoblauch",
+   "items": [
+    {
+     "id": "schinken-stangerl",
+     "name": "Schinken-Stangerl",
+     "desc": "Tomatensauce, Pizzakäse, Schinken, Mais – mit Knoblauch",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "variants": [
+      {
+       "id": "klein",
+       "label": "klein",
+       "price": 780
+      },
+      {
+       "id": "gross",
+       "label": "groß",
+       "price": 960
+      }
+     ]
+    },
+    {
+     "id": "salami-stangerl",
+     "name": "Salami-Stangerl",
+     "desc": "Tomatensauce, Pizzakäse, Salami, Mais – mit Knoblauch",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "variants": [
+      {
+       "id": "klein",
+       "label": "klein",
+       "price": 780
+      },
+      {
+       "id": "gross",
+       "label": "groß",
+       "price": 960
+      }
+     ]
+    },
+    {
+     "id": "thunfisch-stangerl",
+     "name": "Thunfisch-Stangerl",
+     "desc": "Tomatensauce, Pizzakäse, Thunfisch, Zwiebel – mit Knoblauch",
+     "allergens": [
+      "A",
+      "D",
+      "G",
+      "L"
+     ],
+     "variants": [
+      {
+       "id": "klein",
+       "label": "klein",
+       "price": 780
+      },
+      {
+       "id": "gross",
+       "label": "groß",
+       "price": 960
+      }
+     ]
+    },
+    {
+     "id": "vegetaria-stangerl",
+     "name": "Vegetaria-Stangerl",
+     "desc": "Tomatensauce, Pizzakäse, Zwiebel, Mais, Schafkäse, Champignons – mit Knoblauch",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "variants": [
+      {
+       "id": "klein",
+       "label": "klein",
+       "price": 780
+      },
+      {
+       "id": "gross",
+       "label": "groß",
+       "price": 960
+      }
+     ],
+     "veg": true
+    },
+    {
+     "id": "kebap-stangerl",
+     "name": "Kebap-Stangerl",
+     "desc": "Tomatensauce, Pizzakäse, Kebapfleisch, Zwiebel – mit Knoblauch",
+     "allergens": [
+      "A",
+      "F",
+      "G",
+      "L",
+      "H",
+      "M"
+     ],
+     "variants": [
+      {
+       "id": "klein",
+       "label": "klein",
+       "price": 780
+      },
+      {
+       "id": "gross",
+       "label": "groß",
+       "price": 960
+      }
+     ]
+    },
+    {
+     "id": "peperoni-stangerl",
+     "name": "Peperoni-Stangerl",
+     "desc": "Tomatensauce, Pizzakäse, Schinken, Salami, Mais – mit Knoblauch",
+     "allergens": [
+      "A",
+      "G",
+      "L"
+     ],
+     "variants": [
+      {
+       "id": "klein",
+       "label": "klein",
+       "price": 780
+      },
+      {
+       "id": "gross",
+       "label": "groß",
+       "price": 960
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kebap",
+   "name": "Kebap",
+   "note": "",
+   "items": [
+    {
+     "id": "doener-kebap",
+     "name": "Döner Kebap",
+     "desc": "Kebapfleisch, Salat, Zwiebel, Tomaten, Joghurtsauce, Brot",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "M"
+     ],
+     "price": 600,
+     "popular": true
+    },
+    {
+     "id": "kebap-dueruem",
+     "name": "Kebap Dürüm",
+     "desc": "Kebapfleisch, Salat, Zwiebel, Tomaten, Joghurtsauce, Fladenbrot",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "M"
+     ],
+     "price": 700,
+     "popular": true
+    },
+    {
+     "id": "kebap-teller",
+     "name": "Kebap Teller",
+     "desc": "Kebapfleisch, kleiner gemischter Salat, Joghurtsauce",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "M"
+     ],
+     "variants": [
+      {
+       "id": "brot",
+       "label": "mit Brot",
+       "price": 1250
+      },
+      {
+       "id": "pommes",
+       "label": "mit Pommes",
+       "price": 1250
+      }
+     ]
+    },
+    {
+     "id": "vegetaria-sandwich",
+     "name": "Vegetaria-Sandwich",
+     "desc": "Salat, Zwiebel, Tomaten, Schafskäse, Joghurtsauce, Brot",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "M"
+     ],
+     "price": 600,
+     "veg": true
+    },
+    {
+     "id": "huehnerschnitzel",
+     "name": "Hühnerschnitzel",
+     "desc": "mit Pommes Frites",
+     "allergens": [
+      "A",
+      "C",
+      "G"
+     ],
+     "price": 1250
+    }
+   ]
+  },
+  {
+   "id": "burger",
+   "name": "Burger",
+   "note": "Alle Burger mit Fleisch, Brot, Sauce, Salat, Zwiebel, Tomaten und Gurken",
+   "items": [
+    {
+     "id": "hamburger",
+     "name": "Hamburger",
+     "desc": "Fleisch, Brot, Sauce, Salat, Zwiebel, Tomaten, Gurken",
+     "allergens": [
+      "A",
+      "N",
+      "M",
+      "C"
+     ],
+     "variants": [
+      {
+       "id": "100",
+       "label": "100 g Fleisch",
+       "price": 600
+      },
+      {
+       "id": "180",
+       "label": "180 g Fleisch",
+       "price": 850
+      }
+     ],
+     "options": "burger"
+    },
+    {
+     "id": "chickenburger",
+     "name": "Chickenburger",
+     "desc": "paniert · Fleisch, Brot, Sauce, Salat, Zwiebel, Tomaten, Gurken",
+     "allergens": [
+      "A",
+      "N",
+      "M",
+      "C"
+     ],
+     "variants": [
+      {
+       "id": "100",
+       "label": "100 g Fleisch",
+       "price": 600
+      },
+      {
+       "id": "180",
+       "label": "180 g Fleisch",
+       "price": 850
+      }
+     ],
+     "options": "burger"
+    },
+    {
+     "id": "cheeseburger",
+     "name": "Cheeseburger",
+     "desc": "mit Cheddar · Fleisch, Brot, Sauce, Salat, Zwiebel, Tomaten, Gurken",
+     "allergens": [
+      "A",
+      "N",
+      "M",
+      "C",
+      "G"
+     ],
+     "variants": [
+      {
+       "id": "100",
+       "label": "100 g Fleisch",
+       "price": 700
+      },
+      {
+       "id": "180",
+       "label": "180 g Fleisch",
+       "price": 950
+      }
+     ],
+     "options": "burger"
+    },
+    {
+     "id": "mexico-burger",
+     "name": "Mexico Burger",
+     "desc": "mit scharfer Sauce, Mais, Jalapeños · Fleisch, Brot, Sauce, Salat, Zwiebel, Tomaten, Gurken",
+     "allergens": [
+      "A",
+      "N",
+      "M"
+     ],
+     "variants": [
+      {
+       "id": "100",
+       "label": "100 g Fleisch",
+       "price": 700
+      },
+      {
+       "id": "180",
+       "label": "180 g Fleisch",
+       "price": 950
+      }
+     ],
+     "options": "burger",
+     "spicy": true
+    },
+    {
+     "id": "peperoni-burger",
+     "name": "Peperoni Burger",
+     "desc": "mit Speck, Spiegelei, Mais · Fleisch, Brot, Sauce, Salat, Zwiebel, Tomaten, Gurken",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "M",
+      "N"
+     ],
+     "variants": [
+      {
+       "id": "100",
+       "label": "100 g Fleisch",
+       "price": 900
+      },
+      {
+       "id": "180",
+       "label": "180 g Fleisch",
+       "price": 1200
+      }
+     ],
+     "options": "burger",
+     "popular": true
+    }
+   ]
+  },
+  {
+   "id": "nudeln",
+   "name": "Nudeln",
+   "note": "",
+   "items": [
+    {
+     "id": "nudeln",
+     "name": "Nudeln & Sauce nach Wahl",
+     "desc": "Spaghetti, Penne, Bandnudeln, Nudel-Mix oder Tortellini – mit einer Sauce nach Wahl",
+     "allergens": [
+      "A",
+      "C"
+     ],
+     "price": 1090,
+     "options": "pasta"
+    },
+    {
+     "id": "lasagne",
+     "name": "Lasagne",
+     "desc": "hausgemacht",
+     "allergens": [
+      "A",
+      "C",
+      "G",
+      "M",
+      "F",
+      "L",
+      "N"
+     ],
+     "price": 1190,
+     "options": "lasagne"
+    }
+   ]
+  },
+  {
+   "id": "salat",
+   "name": "Salate",
+   "note": "",
+   "items": [
+    {
+     "id": "kebap-salat",
+     "name": "Kebap Salat",
+     "desc": "Kebapfleisch auf gemischtem Salat, Joghurtdressing, hausgemachtes Brot",
+     "allergens": [
+      "A",
+      "F",
+      "G",
+      "H",
+      "M"
+     ],
+     "price": 1100
+    },
+    {
+     "id": "thunfisch-salat",
+     "name": "Thunfisch Salat",
+     "desc": "Thunfisch auf gemischtem Salat, Olivenöl, Balsamico-Essig, hausgemachtes Brot",
+     "allergens": [
+      "A",
+      "D"
+     ],
+     "price": 1100
+    },
+    {
+     "id": "haus-salat",
+     "name": "Haus Salat",
+     "desc": "Schinken auf gemischtem Salat, Kernöl, Essig, hausgemachtes Brot",
+     "allergens": [
+      "A"
+     ],
+     "price": 1100
+    },
+    {
+     "id": "griechischer-salat",
+     "name": "Griechischer Salat",
+     "desc": "Schafkäse, Oliven auf gemischtem Salat, Olivenöl, Balsamico-Essig, hausgemachtes Brot",
+     "allergens": [
+      "A",
+      "G"
+     ],
+     "price": 1100,
+     "veg": true
+    },
+    {
+     "id": "backhendl-salat",
+     "name": "Backhendl Salat",
+     "desc": "Panierte Hühnerbrust auf gemischtem Salat, Kernöl, Essig, hausgemachtes Brot",
+     "allergens": [
+      "A",
+      "C",
+      "G"
+     ],
+     "price": 1100
+    },
+    {
+     "id": "gemischter-salat",
+     "name": "Gemischter Salat",
+     "desc": "mit Essig und Kernöl",
+     "allergens": [],
+     "price": 600,
+     "veg": true
+    }
+   ]
+  },
+  {
+   "id": "beilagen",
+   "name": "Beilagen",
+   "note": "",
+   "items": [
+    {
+     "id": "pommes",
+     "name": "Pommes Frites",
+     "desc": "",
+     "allergens": [],
+     "variants": [
+      {
+       "id": "klein",
+       "label": "klein",
+       "price": 350
+      },
+      {
+       "id": "gross",
+       "label": "groß",
+       "price": 500
+      }
+     ],
+     "veg": true
+    },
+    {
+     "id": "brot",
+     "name": "Hausgemachtes Brot",
+     "desc": "",
+     "allergens": [
+      "A"
+     ],
+     "price": 150,
+     "veg": true
+    },
+    {
+     "id": "knoblauch-stangerl",
+     "name": "Knoblauch-Stangerl",
+     "desc": "",
+     "allergens": [
+      "A"
+     ],
+     "price": 250,
+     "veg": true
+    },
+    {
+     "id": "ketchup-mayo",
+     "name": "Ketchup oder Mayonnaise",
+     "desc": "",
+     "allergens": [
+      "C",
+      "M"
+     ],
+     "variants": [
+      {
+       "id": "ketchup",
+       "label": "Ketchup",
+       "price": 100
+      },
+      {
+       "id": "mayo",
+       "label": "Mayonnaise",
+       "price": 100
+      }
+     ],
+     "veg": true
+    },
+    {
+     "id": "joghurtsauce",
+     "name": "Joghurtsauce",
+     "desc": "",
+     "allergens": [
+      "C",
+      "G",
+      "M"
+     ],
+     "price": 150,
+     "veg": true
+    }
+   ]
+  },
+  {
+   "id": "getraenke",
+   "name": "Getränke",
+   "note": "Alle Getränke zzgl. € 0,25 Pfand",
+   "items": [
+    {
+     "id": "softdrink",
+     "name": "Alkoholfreies Getränk 0,5 l",
+     "desc": "Sorte bitte als Anmerkung angeben · zzgl. € 0,25 Pfand",
+     "allergens": [],
+     "price": 350,
+     "deposit": 25,
+     "veg": true
+    },
+    {
+     "id": "energy",
+     "name": "Red Bull / Monster",
+     "desc": "zzgl. € 0,25 Pfand",
+     "allergens": [],
+     "deposit": 25,
+     "variants": [
+      {
+       "id": "redbull",
+       "label": "Red Bull",
+       "price": 400
+      },
+      {
+       "id": "monster",
+       "label": "Monster",
+       "price": 400
+      }
+     ],
+     "veg": true
+    },
+    {
+     "id": "bier",
+     "name": "Bier Dose 0,5 l",
+     "desc": "zzgl. € 0,25 Pfand · Abgabe ab 16 Jahren",
+     "allergens": [
+      "A"
+     ],
+     "price": 400,
+     "deposit": 25,
+     "veg": true
+    }
+   ]
+  }
+ ],
+ "allergens": {
+  "A": "glutenhaltiges Getreide",
+  "B": "Krebstiere",
+  "C": "Ei",
+  "D": "Fisch",
+  "E": "Erdnuss",
+  "F": "Soja",
+  "G": "Milch oder Laktose",
+  "H": "Schalenfrüchte",
+  "L": "Sellerie",
+  "M": "Senf",
+  "N": "Sesam",
+  "O": "Sulfite",
+  "P": "Lupinen",
+  "R": "Weichtiere"
+ }
+}
