@@ -1,0 +1,2 @@
+# Auf Netlify gibt es keinen Server – die Website erkennt das und arbeitet lokal.
+/api/*  /api-offline.json  200

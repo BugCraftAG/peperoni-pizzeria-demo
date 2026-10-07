@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="de-AT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Peperoni · Pizzeria, Kebap & Burger in Bad Radkersburg</title>
+  <meta name="description" content="Pizza, Kebap, Burger, Nudeln und Salate aus der Langgasse 31 in Bad Radkersburg. Online bestellen zum Abholen oder Liefern.">
+  <!-- Entwurf: nicht in Suchmaschinen aufnehmen, bis der Inhaber zustimmt -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#16110f">
+  <meta name="color-scheme" content="dark">
+  <!-- leer = gleiche Domain (/api). Für einen externen Server z. B. https://api.example.at -->
+  <meta name="peperoni-api" content="">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="data/menu.json" as="fetch" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="dist/src/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#speisekarte">Zur Speisekarte springen</a>
+
+  <aside class="demo-bar" aria-label="Hinweis zum Entwurf">
+    <span class="demo-tag">Entwurf</span>
+    <span class="demo-long">Website-Entwurf von David Tomoiaga für die Pizzeria Peperoni – keine offizielle Seite. Bestellungen gehen an eine Testnummer, nicht an die Pizzeria.</span>
+    <span class="demo-short">Entwurf von David Tomoiaga – keine offizielle Seite. Bestellungen gehen an eine Testnummer.</span>
+  </aside>
+
+  <header class="top" id="top">
+    <div class="wrap top-in">
+      <a class="brand" href="#start">
+        <span class="brand-mark" data-logo></span>
+        <span class="brand-text"><b>PEPERONI</b><small>Pizzeria · Kebap · Burger</small></span>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#speisekarte">Speisekarte</a>
+        <a href="#liefergebiet">Liefergebiet</a>
+        <a href="#zeiten">Öffnungszeiten</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="top-actions">
+        <span class="status-pill" data-status aria-live="polite"><i></i><span>…</span></span>
+        <button class="icon-btn" type="button" data-open-account>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+          <span class="account-label" data-account-label>Anmelden</span>
+        </button>
+        <button class="cart-btn" type="button" data-open-cart>
+          <span class="sr">Warenkorb:</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.5l2.2 11h10.6L20.5 7H7"/><circle cx="9.5" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg>
+          <span class="cart-count" data-cart-count>0</span>
+          <span class="cart-sum" data-cart-sum>€ 0,00</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="start">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="kicker hand">Langgasse 31 · Bad Radkersburg</p>
+          <h1 id="hero-title" class="hero-title">
+            <span>Pizza.</span>
+            <span class="outline">Kebap.</span>
+            <span>Burger.</span>
+          </h1>
+          <p class="lead">Frisch belegt, heiß aus dem Ofen und vom Spieß – zum Abholen, Liefern oder gleich bei uns essen.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#speisekarte">Jetzt bestellen
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="tel:+43347640786">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              03476 40786</a>
+          </div>
+          <ul class="facts">
+            <li><b data-fact-fee>ab € 2,00</b><span>Liefergebühr</span></li>
+            <li><b data-fact-min>ab € 15,00</b><span>Mindestbestellwert</span></li>
+            <li><b>33 cm</b><span>jede Pizza</span></li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <div class="pizza-spin" data-hero-pizza></div>
+          <div class="sticker"><small>Pizza ab</small><b data-pizza-from>€ 9,50</b></div>
+          <p class="hand note-arrow">Wunschpizza mit<br>5 Zutaten deiner Wahl!
+            <svg viewBox="0 0 90 60" aria-hidden="true"><path d="M5 8c25 2 52 12 68 40"/><path d="M62 44l11 6 2-13"/></svg></p>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true"><div class="marquee-track" data-marquee></div></div>
+    </section>
+
+    <section class="services wrap" aria-label="Service">
+      <article class="service">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16V7h11v9"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg>
+        <h2>Lieferung</h2>
+        <p>Bad Radkersburg und Umgebung – vier Zonen bis Tieschen und Klöch.</p>
+      </article>
+      <article class="service">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 13H6Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+        <h2>Abholung</h2>
+        <p>Online bestellen, Wunschzeit wählen und frisch in der Langgasse abholen.</p>
+      </article>
+      <article class="service">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v8a3 3 0 0 0 3 3v7M7 3v6M10 3v8a3 3 0 0 1-3 3"/><path d="M17 21V3c-2 1-3.5 4-3.5 8h3.5"/></svg>
+        <h2>Vor Ort essen</h2>
+        <p>Platz nehmen und genießen – direkt bei uns in der Langgasse.</p>
+      </article>
+    </section>
+
+    <section class="menu-sec" id="speisekarte" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="kicker hand">frisch zubereitet</p>
+          <h2 id="menu-title" class="sec-title">Speisekarte</h2>
+        </div>
+        <div class="menu-tools">
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            <span class="sr">Speisekarte durchsuchen</span>
+            <input type="search" data-search placeholder="Suchen, z. B. Thunfisch, Kebap …" autocomplete="off">
+          </label>
+          <div class="chips" role="group" aria-label="Filter">
+            <button type="button" class="chip" data-filter="veg" aria-pressed="false">Vegetarisch</button>
+            <button type="button" class="chip" data-filter="spicy" aria-pressed="false">Scharf</button>
+            <button type="button" class="chip" data-filter="popular" aria-pressed="false">Hausspezialität</button>
+          </div>
+        </div>
+      </div>
+      <nav class="cat-nav" aria-label="Kategorien"><div class="wrap cat-nav-in" data-cat-nav></div></nav>
+      <div class="wrap" data-menu>
+        <p class="loading">Speisekarte wird geladen …</p>
+      </div>
+      <div class="wrap">
+        <details class="allergens">
+          <summary>Allergene &amp; Hinweise</summary>
+          <dl data-allergens></dl>
+          <p class="small">Die Buchstaben bei den Gerichten kennzeichnen die enthaltenen Allergene laut EU-Verordnung 1169/2011. Alle Preise in Euro inkl. MwSt. Getränke zzgl. € 0,25 Pfand.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="zones-sec" id="liefergebiet" aria-labelledby="zones-title">
+      <div class="wrap zones-in">
+        <div>
+          <p class="kicker hand">wir kommen zu dir</p>
+          <h2 id="zones-title" class="sec-title">Liefergebiet</h2>
+          <p class="lead">Mindestbestellwert und Liefergebühr hängen vom Ort ab. Den genauen Betrag siehst du im Warenkorb, sobald du deinen Ort gewählt hast.</p>
+          <div class="zone-list" data-zones></div>
+        </div>
+        <div class="zone-map" data-zone-map></div>
+      </div>
+    </section>
+
+    <section class="info-sec wrap" aria-label="Öffnungszeiten und Kontakt">
+      <article class="card hours" id="zeiten" aria-labelledby="hours-title">
+        <h2 id="hours-title" class="sec-title sm">Öffnungszeiten</h2>
+        <table data-hours><caption class="sr">Öffnungszeiten pro Wochentag</caption></table>
+        <p class="small">An Feiertagen können die Zeiten abweichen – im Zweifel kurz anrufen.</p>
+      </article>
+      <article class="card contact" id="kontakt" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="sec-title sm">Kontakt</h2>
+        <address>
+          <b>Peperoni</b><br>
+          Langgasse 31<br>
+          8490 Bad Radkersburg
+        </address>
+        <a class="phone-big" href="tel:+43347640786">03476 40786</a>
+        <ul class="tags">
+          <li>Speisen vor Ort</li><li>Abholung</li><li>Lieferung</li>
+        </ul>
+        <div class="contact-cta">
+          <a class="btn btn-ghost" target="_blank" rel="noopener" data-maps href="https://www.google.com/maps/search/?api=1&amp;query=Peperoni%20Langgasse%2031%208490%20Bad%20Radkersburg">Route in Google Maps
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div>
+        <p class="brand"><span class="brand-mark" data-logo></span><span class="brand-text"><b>PEPERONI</b><small>Pizzeria · Kebap · Burger</small></span></p>
+        <p class="small">Langgasse 31 · 8490 Bad Radkersburg · <a href="tel:+43347640786">03476 40786</a></p>
+      </div>
+      <div class="foot-demo small">
+        <p><b>Hinweis:</b> Dies ist ein unverbindlicher Website-Entwurf von <a href="https://david-tomoiaga.netlify.app" target="_blank" rel="noopener">David Tomoiaga</a> und keine offizielle Seite der Pizzeria Peperoni. Preise und Zeiten laut Speisekarte – ohne Gewähr.</p>
+        <p>Diese Seite verwendet keine Cookies von Drittanbietern und kein Tracking. Schriften werden lokal geladen. Warenkorb und „Daten merken“ werden nur in deinem Browser gespeichert.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile: schwebender Warenkorb -->
+  <button class="fab" type="button" data-open-cart hidden>
+    <span><b data-cart-count>0</b> im Warenkorb</span>
+    <span data-cart-sum>€ 0,00</span>
+  </button>
+
+  <!-- Auswahl-Dialog für ein Gericht -->
+  <dialog class="sheet customizer" data-customizer aria-labelledby="cz-title"></dialog>
+
+  <!-- Warenkorb & Bestellung -->
+  <dialog class="drawer" data-cart aria-labelledby="cart-title"></dialog>
+
+  <!-- Konto -->
+  <dialog class="sheet account" data-account aria-labelledby="acc-title"></dialog>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="sr" id="live" aria-live="polite"></div>
+  <noscript><p class="noscript">Für die Online-Bestellung bitte JavaScript aktivieren – oder einfach anrufen: <a href="tel:+43347640786">03476 40786</a>.</p></noscript>
+</body>
+</html>

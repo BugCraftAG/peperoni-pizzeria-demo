@@ -1,0 +1,22 @@
+{
+  "name": "peperoni-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website-Entwurf für Pizzeria Peperoni, Bad Radkersburg – Speisekarte, Warenkorb, Bestellung per WhatsApp",
+  "type": "module",
+  "scripts": {
+    "data": "node -e \"require('fs').mkdirSync('data',{recursive:true});require('fs').copyFileSync('../shared/menu.json','data/menu.json')\"",
+    "build": "npm run data && tsc -p .",
+    "test": "npm run build && node --test \"dist/tests/*.test.js\"",
+    "site": "npm run build && node build-site.mjs",
+    "start": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
